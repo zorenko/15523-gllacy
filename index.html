@@ -12,16 +12,53 @@
         <nav class="main-header__nav">
           <ul>
             <li class="main-header__nav-item main-header__nav-item--logo"><a><img src="img/logo.png"></a></li>
-            <li class="main-header__nav-item"><a href="catalog.html">Каталог</a></li>
+            <li class="main-header__nav-item"><a href="catalog.html">Каталог</a>
+              <ul class="main-header__subnav">
+                <li class="main-header__subnav-item main-header__subnav-item--new"><a href="#">Новинки</a></li>
+                <li class="main-header__subnav-item"><a href="#">Сливочное</a></li>
+                <li class="main-header__subnav-item"><a href="#">Щербеты</a></li>
+                <li class="main-header__subnav-item"><a href="#">Фруктовый лед</a></li>
+                <li class="main-header__subnav-item"><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li class="main-header__nav-item"><a href="#">Доставка и оплата</a></li>
             <li class="main-header__nav-item"><a href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="main-header__user">
           <ul>
-            <li class="main-header__user-item main-header__user-item--search"></li>
-            <li class="main-header__user-item main-header__user-item--login"><a href="#">Вход</a></li>
-            <li class="main-header__user-item main-header__user-item--cart"><a href="#">Пусто</a></li>
+            <li class="main-header__search">
+              <span><input type="search" class="search" placeholder="Что ищем?"/></span>
+            </li>
+            <li class="main-header__login"><a href="#">Вход</a>
+              <form class="main-header__form">
+                <input class="main-header__email" type="email" id="main-header__email" name="main-header__email" placeholder="Электронная почта">
+                <input class="main-header__password" type="password" id="password" name="password" placeholder="Электронная почта">
+                <button class="main-header__btn button">Войти</button>
+                <a class="main-header__link">Забыли пароль?</a>
+                <a class="main-header__link">Новая регистрация</a>
+              </form>
+            </li>
+            <li class="main-header__cart main-header__cart--empty"><a href="#">Пусто</a>
+              <div class="main-header__cart-items">
+                <ul>
+                  <li class="main-header__cart-item">
+                    <img src="" />
+                    <p>Пломбир с апельсиновым джемом</p>
+                    <span class="main-header__cart-amount">1,5 кг х 200 руб.</span>
+                    <span class="main-header__cart-price">300 руб.</span>
+                  </li>
+                  <li class="main-header__cart-item">
+                    <img src="" />
+                    <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                    <span class="main-header__cart-amount">1,5 кг х 200 руб.</span>
+                    <span class="main-header__cart-price">300 руб.</span>
+                  </li>
+                </ul>
+                <span class="main-header__cart-total">Итого: 750 руб.</span>
+                <a class="main-header__cart-btn button">Оформить заказ</a>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="main-header__info">
